@@ -57,42 +57,61 @@
             <h1>Reported posts</h1>
         </div>
     </main>
-    <section id="section" class="container py-5">
-        <article>
-            <h3>Q1: Difference Between Local Storage vs Session Storage.</h3>
-            <h4>Local Storage:</h4>
-            <p class="fs-5">Local storage is a way to store data on a client's computer. It allows storing key/value
-                pairs in a web
-                browser and it stores data without expiration date. We can clear this data using local storage methods.
-                Local Storage capacity 10mb. Locan storage accessible from any window.
-            <p>window.localStorage: stores data with no expiration date.</p>
-            </p>
-            <h4>Session Storage:</h4>
-            <p class="fs-5">Session storage is a popular choice for storing data in the browser. This
-                enables developers
-                to preserve
-                and restore different values. Session storage only holds data for a specific session. Data is cleared
-                when the user closes the browser window. Session storage capacity 5mb. Session storage accessible from
-                same tab. Session storage location browser only.
-            <p>window.sessionStorage : stores data for one session (data is lost when the browser tab is closed).</p>
-            </p>
-        </article>
 
-        <article>
-            <h3>Q2: What does javascript event loop do?</h3>
-            <p class="fs-5">we know that javascript is a combination of synchronous and asynchronous
-                events. Synchronous
-                programming means that the code follows the defined sequence. In a synchronous program, the next line is
-                executed when a function is called and returns some value.
-                asynchronous is things
-                like callback or promises. Asynchronous programming refers to code that is not sequentially effective.
-                These functions are not performed in a defined order within a program but only when certain conditions
-                are met. If we load a page in a browser and that page executes a few javascript functions there is one
-                javascript thread that's executing it all. asynchronous event queue works for async when an async call
-                happens there is often a callback associated with it. Then that async call completes the callback is not
-                immediately executed it is put to the back of the event queue.</p>
-        </article>
+    <section id="section" class="container py-5">
+        <h2 class="text-center text-info fw-bold">Find your question with answer</h2>
+        <div class="row">
+            <div class="col-12">
+                <article class="border p-2 mb-2">
+                    <h3>Q1: Difference Between Local Storage vs Session Storage.</h3>
+                    <h4>Local Storage:</h4>
+                    <p class="fs-5" style="text-align: justify;">Local storage is a way to store data on the user's
+                        computer. It allows storing key/value pairs in a web browser and it stores data without an
+                        expiration date. We can clear this data using local storage methods. Local Storage capacity
+                        10mb. Local storage is accessible from any window.
+                    <p>window.localStorage: stores data with no expiration date.</p>
+                    </p>
+                    <h4>Session Storage:</h4>
+                    <p class="fs-5" style="text-align: justify;">Session storage is a popular choice for storing data in
+                        the browser. This enables developers to preserve and restore different values. Session storage
+                        only holds data for a specific session. Data is cleared when the user closes the browser window.
+                        Session storage capacity 5Mb. Session storage is accessible from the same tab. Session storage
+                        location browser only.
+                    <p>window.sessionStorage : stores data for one session (data is lost when the browser tab is
+                        closed).</p>
+                    </p>
+                </article>
+
+                <article class="border p-2">
+                    <h3>Q2: What does javascript event loop do?</h3>
+                    <p class="fs-5" style="text-align: justify;">javascript is primarily single-threaded, but browser
+                        APIs distribute as
+                        several
+                        threads. Event Loop facilitates this process. It continuously checks to see if the call stack is
+                        empty. If it is empty, new activities are added to the event row. If this is not the event the
+                        immediate activities call is processed. we know that javascript is a combination of synchronous
+                        and asynchronous
+                        events. Synchronous
+                        programming means that the code follows the defined sequence. In a synchronous program, the next
+                        line is
+                        executed when a function is called and returns some value.
+                        asynchronous is things
+                        like callback or promises. Asynchronous programming refers to code that is not sequentially
+                        effective.
+                        These functions are not performed in a defined order within a program but only when certain
+                        conditions
+                        are met. If we load a page in a browser and that page executes a few javascript functions there
+                        is one
+                        javascript thread that's executing it all. asynchronous event queue works for async when an
+                        async call
+                        happens there is often a callback associated with it. Then that async call completes the
+                        callback is not
+                        immediately executed it is put to the back of the event queue.</p>
+                </article>
+            </div>
+        </div>
     </section>
+
     <footer></footer>
 
     <!-- add javascript  file  -->
